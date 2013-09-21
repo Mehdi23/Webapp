@@ -10,7 +10,7 @@
 		<jersey-version>1.8</jersey-version>
 		<!-- GAE VERSION -->
 		<gae.version>1.7.5</gae.version>
-		<gae.home>/home/mehdi/.m2/repository/com/google/appengine/appengine-java-sdk/1.7.5</gae.home>
+		<gae.home>/home/mehdi/Documents/Java/appengine-java-sdk/1.7.5</gae.home>
 	</properties>
 	<build>
 		<finalName>GAE-WebApp</finalName>
