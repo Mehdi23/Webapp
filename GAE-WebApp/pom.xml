@@ -86,12 +86,6 @@
 			<version>1.0-alpha-4</version>
 			<scope>test</scope>
 		</dependency>
-		<!-- Datastore dependency -->
-		<dependency>
-			<groupId>org.mehdi.project</groupId>
-			<artifactId>datastore-model</artifactId>
-			<version>1.0</version>
-		</dependency>
 		<!-- GAE DEPENDENCIES -->
 		<dependency>
 			<groupId>com.google.appengine</groupId>

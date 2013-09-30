@@ -4,44 +4,27 @@
 	<title>My Page</title> 
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
-        <link rel="stylesheet" href="css/index.css" />
 	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+        <script src="js/index.js"></script>
 	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
 </head> 
 
 <body> 
-<div data-role="page" id="landing" data-theme="d">
+<div data-role="page" id="landing" data-theme="d"> 
+        <!-- Header -->
+        <div data-role="header" data-position="fixed" data-theme="d">                 
+                <h1 class="">Chemistry-Lab</h1>                 
+        </div> <!-- /Header -->
+        <!--h2 id="banner">Chemistry-Lab</h2-->
 
-	<div data-role="header" data-position="fixed" data-theme="d">                 
-		<h1 class="">Bartender : cross-browser iOS-style tab bar</h1>                 
-	</div> <!-- /Header -->
 
-	<div data-role="content">	
-		<p>Hello world</p> 
-	</div><!-- /content -->  
-
-        <!--div data-role="footer" class="nav-glyphish-example" data-position="fixed"> 
-            <div data-role="navbar" class="nav-glyphish-example" data-grid="b"> 
-            <ul> 
-                <li><a href="#" id="Home" data-icon="home">Home</a></li> 
-                <li><a href="#" id="Wiki" data-icon="info">Wiki</a></li> 
-                <li><a href="#" id="About" data-icon="star">About</a></li> 
-            </ul> 
-            </div> 
-        </div-->
-    
-        <div class="nav-glyphish-example ui-footer ui-bar-a" data-role="footer" role="contentinfo" data-position="fixed">
-		<div data-grid="b" class="nav-glyphish-example ui-navbar ui-mini" data-role="navbar" role="navigation">
-		<ul class="ui-grid-b">
-			<li class="ui-block-a"><a data-icon="custom" id="home" href="#" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-theme="d" data-inline="true" class="ui-btn ui-btn-inline ui-btn-icon-top ui-btn-up-a"><span class="ui-btn-text">Home</span></a></li>
-			<li class="ui-block-b"><a data-icon="custom" id="wiki" href="#" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-theme="d" data-inline="true" class="ui-btn ui-btn-inline ui-btn-icon-top ui-btn-up-a"><span class="ui-btn-text">Wiki</span></a></li>
-			<li class="ui-block-c"><a data-icon="custom" id="contact" href="#" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-theme="d" data-inline="true" class="ui-btn ui-btn-inline ui-btn-icon-top ui-btn-up-a"><span class="ui-btn-text">Contact</span></a></li>
-			
-		</ul>
-		</div>
-	</div> 
+        <!-- Content -->
+        <div data-role="content" id="content">	
+		<p>Mobile versions</p> 
+        </div><!-- /content -->
 </div><!-- /page -->
 </body>
+              
 </html>
 
 
