@@ -1,11 +1,10 @@
-package org.mehdi.project.webapp.facade;
+package org.mehdi.project.webapp.rest;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import org.mehdi.project.webapp.rest.Car_Client;
 
 /**
  * Example resource class hosted at the URI path "/myresource"

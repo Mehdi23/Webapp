@@ -3,28 +3,55 @@
 <head> 
 	<title>My Page</title> 
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+
+        <!--///////////////////////////////////////////////////////////////////////////////////////////////////
+        //
+        //		Styles
+        //
+        ///////////////////////////////////////////////////////////////////////////////////////////////////--> 
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/tolito-1.0.5.min.css" />
+        <link rel="stylesheet" href="css/home.css" />
+    
+	
+        <!--///////////////////////////////////////////////////////////////////////////////////////////////////
+        //
+        //		Scripts
+        //
+        ///////////////////////////////////////////////////////////////////////////////////////////////////-->
 	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-        <script src="js/index.js"></script>
-	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+        <script type="text/javascript" src="js/sha1.js"></script>
+        <script type="text/javascript" src="js/codebird.js"></script>
+        <script type='text/javascript' src='js/api/flickr.js'></script>
+        <script type='text/javascript' src='js/api/nytimes.js'></script>
+        <script type='text/javascript' src='js/api/youtube.js'></script>
+        <script type='text/javascript' src='js/api/twitter.js'></script>
+        <script type='text/javascript' src='js/api/wikipedia.js'></script>
+        <script type='text/javascript' src='js/home.js'></script> 
+	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+        <script type='text/javascript' src='js/jquery.easing.1.3.js'></script>
+        <script type="text/javascript" src="js/tolito-1.0.5.min.js"></script>                    
 </head> 
 
-<body> 
-<div data-role="page" id="landing" data-theme="d"> 
+<body id="home"> 
+<div data-role="page"  data-theme="c"> 
         <!-- Header -->
-        <div data-role="header" data-position="fixed" data-theme="d">                 
-                <h1 class="">Chemistry-Lab</h1>                 
+        <div data-role="header" data-position="fixed" data-theme="c">                 
+                <h1 class="">Social Media Search</h1>                 
         </div> <!-- /Header -->
-        <!--h2 id="banner">Chemistry-Lab</h2-->
-
-
         <!-- Content -->
-        <div data-role="content" id="content">	
-		<p>Mobile versions</p> 
+        <div data-role="content" id="content">   
+             <form id="target" action="result.html">
+                   <label for="search-mini">Search Input:</label>
+                   <input id="search-mini" type="search" name="search-mini" value="" data-mini="true"/>
+                   <a id="go" data-role="button">Go</a>
+             </form>
+             <div id="progress" style="visibility:hidden"> 
+                  <p>Retrieving data...<strong>0%</strong></p> 
+                  <progress value="0" min="0" max="100">0%</progress> 
+             </div>
         </div><!-- /content -->
+ 
 </div><!-- /page -->
-</body>
-              
+</body>            
 </html>
-
-

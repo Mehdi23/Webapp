@@ -4,7 +4,7 @@ var flickr_key= '88d30455b41ff5aab043a29dc3bbd53c';
 
 //http://www.flickr.com/services/api/flickr.photos.search.html
 
-var photos;
+var photos="";
 
 function searchPhoto(keyword) {
      var method = 'flickr.photos.search';
@@ -23,7 +23,6 @@ function searchPhoto(keyword) {
          success: function(json){
                  if (json.photos) {
                     photos = json.photos;
-                    console.log(photos);
                     progressbar("20");
                     //displayPhotoResultNumber(json);
                     //var photo = json.photos.photo[10];
@@ -33,4 +32,9 @@ function searchPhoto(keyword) {
          }
     });
  
+}
+
+function searchPhotosNumber() {
+    if(photos!="") {return photos.total;}
+    else return "0";
 }
