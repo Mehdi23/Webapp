@@ -1,45 +1,37 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
-	<title>List of results</title>                    
-</head> 
-
-<body> 
-<div data-role="page" id="results" data-theme="c"> 
+<div data-role="page" class="result-page" data-theme="c" data-back-btn-text="Back"> 
 
         <!-- Header -->
         <div data-role="header" data-position="fixed" data-theme="c">                 
-                <h1 class="">Social Media Search</h1>                 
+                <h1 class="">Social Media Search</h1>
+                <a href="index.html" data-icon="back" data-role="button" class="ui-btn-left">Back</a>                 
         </div> <!-- /Header -->
 
         <!-- Content -->
         <div data-role="content" id="content">  
 
         <ul data-role="listview" data-inset="true">
-            <li><a href="">
-                   <img src="img/icon/flickr.jpg" alt="Photos" class="ui-li-icon">
-                   <span id="num_photos" class="ui-li-count ui-btn-up-c ui-btn-corner-all">0</span>Photos</a>
+            <li><a id="num_photos" href="images.html">
+                   <img src="images/icon/flickr.jpg" alt="Photos" class="ui-li-icon">
+                   <span class="ui-li-count ui-btn-up-c ui-btn-corner-all">0</span>Photos</a>
             </li>
-            <li><a href="">
-                   <img src="img/icon/youtube.png" alt="Videos" class="ui-li-icon">
-                   <span id="num_videos" class="ui-li-count ui-btn-up-c ui-btn-corner-all">0</span>Videos</a>
+            <li><a id="num_videos" href="">
+                   <img src="images/icon/youtube.png" alt="Videos" class="ui-li-icon">
+                   <span class="ui-li-count ui-btn-up-c ui-btn-corner-all">0</span>Videos</a>
             </li>
-            <li><a href="">
-                   <img src="img/icon/nytimes.jpeg" alt="News" class="ui-li-icon">
-                   <span id="num_news" class="ui-li-count ui-btn-up-c ui-btn-corner-all">0</span>News</a>
+            <li><a id="num_news" href="">
+                   <img src="images/icon/nytimes.jpeg" alt="News" class="ui-li-icon">
+                   <span class="ui-li-count ui-btn-up-c ui-btn-corner-all">0</span>News</a>
             </li>
-            <li><a href="">
-                   <img src="img/icon/twitter.png" alt="Tweets" class="ui-li-icon">
-                   <span id="num_tweets" class="ui-li-count ui-btn-up-c ui-btn-corner-all">0</span>Tweets</a>
+            <li><a id="num_tweets" href="">
+                   <img src="images/icon/twitter.png" alt="Tweets" class="ui-li-icon">
+                   <span class="ui-li-count ui-btn-up-c ui-btn-corner-all">0</span>Tweets</a>
             </li>
-            <li><a href="">
-                   <img src="img/icon/wikipedia.png" alt="wikipedia" class="ui-li-icon">
-                   <span id="num_wikis" class="ui-li-count ui-btn-up-c ui-btn-corner-all">0</span>Wikipedia</a>
+            <li><a id="num_wikis" href="">
+                   <img src="images/icon/wikipedia.png" alt="wikipedia" class="ui-li-icon">
+                   <span class="ui-li-count ui-btn-up-c ui-btn-corner-all">0</span>Wikipedia</a>
             </li>
         </ul>
   
         </div><!-- /content -->
  
 </div><!-- /page -->
-</body>            
-</html>

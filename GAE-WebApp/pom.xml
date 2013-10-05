@@ -86,6 +86,13 @@
 			<version>1.0-alpha-4</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- Jena DEPENDENCIES -->
+		<dependency>
+            <groupId>org.apache.jena</groupId>
+            <artifactId>apache-jena-libs</artifactId>
+            <type>pom</type>
+            <version>2.10.0</version>
+        </dependency>
 		<!-- GAE DEPENDENCIES -->
 		<dependency>
 			<groupId>com.google.appengine</groupId>
