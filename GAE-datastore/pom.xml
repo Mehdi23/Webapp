@@ -10,7 +10,7 @@
 		<jersey-version>1.8</jersey-version>
 		<!-- GAE VERSION -->
 		<gae.version>1.7.5</gae.version>
-		<gae.home>/home/mehdi/.m2/repository/com/google/appengine/appengine-java-sdk/1.7.5</gae.home>
+		<gae.home>C:\Users\Mehdi\.m2\repository\com\google\appengine\appengine-java-sdk\1.7.5\appengine-java-sdk-1.7.5\</gae.home>
 	</properties>
 	<build>
 		<finalName>datastore</finalName>
@@ -22,6 +22,9 @@
 				<configuration>
 					<port>8085</port>
 					<address>127.0.0.1</address>
+                    <serverId>appengine.google.com</serverId>
+                    <!--sdkDir>${appengine.sdk.root}</sdkDir-->
+                    <!--appDir>${basedir}/war</appDir-->
 				</configuration>
 				<executions>
 					<execution>
